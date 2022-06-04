@@ -1,6 +1,6 @@
 # Natallia Tkachova
 
-![Natallia Tkachova](/natallia_tkachova.jpg "Natallia Tkachova")
+![Natallia Tkachova](natallia_tkachova.jpg "Natallia Tkachova")
 
 ## Contacts
 **phone number**: +375298182553
