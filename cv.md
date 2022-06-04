@@ -1,5 +1,7 @@
 # Natallia Tkachova
 
+![Natallia Tkachova](/natallia_tkachova.jpg "Natallia Tkachova")
+
 ## Contacts
 **phone number**: +375298182553
 
@@ -34,17 +36,14 @@ function getCount(str) {
 }
 ```
 ## Work Experience
-1. 2017 - 2018
-web agency Redline
-front end developer
+* 2017 - 2018
+**web agency [Redline](https://redline.by/)** (frontend developer)
 
-2. 2018 - 2019
-web agency Site Elite
-modx full stack developer
+* 2018 - 2019
+**web agency [Site Elite](https://st-lt.ru/)** (modx full stack developer)
 
-3. 2020 - 2021
-freelancer
-wordpress full stack developer
+* 2020 - 2021
+**freelancer** (wordpress full stack developer)
 
 ## Education
 **2012 - 2014**
