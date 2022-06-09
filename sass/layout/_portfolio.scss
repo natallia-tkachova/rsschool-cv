@@ -1,0 +1,59 @@
+.section-portfolio {
+    padding: 3rem 0;
+}
+
+.portfolio {
+
+    &__title {
+        margin-bottom: 3rem;
+    }
+
+    &__image {
+        height: 30rem;
+        width: 59rem;
+        object-fit: cover;
+        transition: all 0.5s linear;
+
+        &:hover &__image {
+            transform: scale(1.2);
+        }
+    }
+
+    &__item {
+        position: relative;
+        display: inline-block;
+        border-radius: 1rem;
+        overflow: hidden;
+
+        &:hover .portfolio__overlay {
+            opacity: 0.9;
+        }
+
+        &:hover .portfolio__text {
+            opacity: 1;
+        }
+    }
+
+    &__overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 5;
+        width: 59rem;
+        height: 30rem;
+        background-color: $color-blue;
+        opacity: 0;
+        transition: all 0.5s linear;
+    }
+
+    &__text {
+        position: absolute;
+        top: 46%;
+        left: 50%;
+        z-index: 6;
+        transform: translate(-50%, -50%);
+        transition: all 0.5s linear;
+        opacity: 0;
+    }
+
+}

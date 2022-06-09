@@ -1,0 +1,24 @@
+.section-code {
+    background-color: $color-gray;
+}
+
+.code {
+    padding-bottom: 3rem;
+
+    &__title {
+        margin-bottom: 3rem;
+    }
+
+    &__image-wrapper {
+        overflow: hidden;
+    }
+
+    &__image {
+        height: 100%;
+        transition: all 0.5s linear;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+}

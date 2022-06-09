@@ -1,0 +1,36 @@
+.section-contacts {
+    padding: 3rem 0;
+}
+
+.contacts {
+    &__items {
+        padding: 0;
+        list-style-type: none;
+    }
+
+    &__item {
+        padding: 1rem;
+        text-align: center;
+        box-shadow: $shadow;
+        transition: all 0.5s linear;
+
+        &:hover {
+            box-shadow: $shadow-hover;
+        }
+    }
+
+    &__title {
+        margin-bottom: 3rem;
+    }
+
+    &__subtitle {
+        margin: 1rem 0 0;
+    }
+
+    &__icon {
+        margin: auto;
+        color: $color-brown;
+        font-size: 2.8rem;
+        text-align: center;
+    }
+}

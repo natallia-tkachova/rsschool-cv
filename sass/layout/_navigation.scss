@@ -1,0 +1,31 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.navigation {
+    position: fixed;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    height: 6rem;
+    width: 100%;
+    background-color: $color-blue;
+    transition: all 0.3s ease-in-out;
+
+    &__items {
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+        list-style-type: none;
+    }
+
+    &__link {
+        cursor: pointer;
+        transition: all 0.5s linear;
+    }
+
+    &_tiny {
+        padding: 0;
+        height: 30px;
+    }
+}

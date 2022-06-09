@@ -1,0 +1,66 @@
+.section-work {
+    padding: 3rem;
+    background-color: $color-gray;
+}
+
+.work {
+
+    &__title {
+        margin-bottom: 3rem;
+    }
+
+    &__timeline {
+        display: block;
+    }
+
+    &__item {
+        position: relative;
+        padding: 2rem 0;
+        width: 98%;
+        box-shadow: $shadow;
+        transition: all 0.5s linear;
+
+        &:hover {
+            box-shadow: $shadow-hover;
+        }
+
+
+        &::before {
+            content: "";
+            position: absolute;
+            left: -4rem;
+            height: 1rem;
+            width: 1rem;
+            background-color: $color-light;
+            border: 0.3rem solid $color-brown;
+            border-radius: 50%;
+        }
+    }
+
+    &__items {
+        padding-left: 3rem;
+        border-left: .2rem solid $color-brown;
+    }
+
+
+    &__subtitle {
+        display: block;
+    }
+
+    &__text {
+        display: block;
+    }
+
+    &__image-wrapper {
+        overflow: hidden;
+    }
+
+    &__image {
+        height: 100%;
+        transition: all 0.5s linear;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+}

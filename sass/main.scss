@@ -3,7 +3,13 @@
 @import 'base/normalize';
 @import 'base/typography';
 
-@import 'layout/navigation';
 @import 'layout/grid';
+@import 'layout/container';
 @import 'layout/header';
+@import 'layout/navigation';
+@import 'layout/summary';
+@import 'layout/contacts';
+@import 'layout/portfolio';
+@import 'layout/work';
+@import 'layout/code';
 @import 'layout/footer';

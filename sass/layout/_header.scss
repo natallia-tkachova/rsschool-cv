@@ -1,0 +1,17 @@
+.header {
+    background-color: $color-light;
+}
+
+.profile {
+    padding-top: 6rem;
+
+    &__content {
+        margin: auto;
+        padding-top: 10rem;
+    }
+
+    &__title,
+    &__text {
+        margin: 1rem 0;
+    }
+}
