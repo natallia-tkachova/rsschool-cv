@@ -1,0 +1,41 @@
+.footer {
+    padding: 2rem 0 1.5rem;
+    background-color: $color-dark;
+
+    &__logo {
+        width: 16rem;
+        height: 6rem;
+        background-image: url("assets/svg/rs_school_js.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        @extend %transition;
+
+        &:hover {
+            background-image: url("assets/svg/rs_school_js_hover.svg");
+        }
+
+        @include respond-to('m') {
+            margin: auto;
+            width: 11rem;
+            height: 5rem;
+        }
+    }
+
+    &__icon {
+        margin-left: auto;
+
+        @include respond-to('m') {
+            margin: auto;
+        }
+    }
+}
+
+.fa-github {
+    color: $color-golden;
+    font-size: 7rem;
+    @extend %transition;
+
+    &:hover {
+        color: $color-light;
+    }
+}

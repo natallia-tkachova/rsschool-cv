@@ -1,0 +1,203 @@
+html {
+    font-size: 10px;
+    font-family: 'Nunito', sans-serif;
+}
+
+.navigation {
+    &__link {
+        color: $color-light;
+        font-size: 1.6rem;
+        font-weight: 600;
+        letter-spacing: 0.1rem;
+        text-decoration: none;
+        text-transform: uppercase;
+
+        &:hover {
+            color: $color-golden;
+        }
+
+        &_active {
+            color: $color-golden;
+        }
+    }
+}
+
+.profile {
+    &__title {
+        color: $color-blue;
+        font-size: 5.7rem;
+        font-weight: 600;
+
+        @include respond-to('l') {
+            font-size: 4rem;
+        }
+
+        @include respond-to('m') {
+            font-size: 3rem;
+        }
+
+        @include respond-to('s') {
+            font-size: 2.4rem;
+        }
+
+        @include respond-to('xs') {
+            font-size: 1.8rem;
+        }
+    }
+
+    &__text {
+        color: $color-brown;
+        font-size: 3rem;
+        font-weight: 600;
+
+        @include respond-to('l') {
+            font-size: 2.8rem;
+        }
+
+        @include respond-to('m') {
+            font-size: 2rem;
+        }
+
+        @include respond-to('s') {
+            font-size: 1.8rem;
+            margin-left: -20px;
+        }
+
+        @include respond-to('xs') {
+            font-size: 1.6rem;
+        }
+    }
+}
+
+.summary {
+    &__title {
+        @extend %title-medium;
+        text-align: left;
+        margin-bottom: 1rem;
+    }
+
+    &__subtitle {
+        @extend %title-small;
+        margin-bottom: 1rem;
+    }
+
+    &__text {
+        @extend %text;
+        text-align: justify;
+        margin: 0;
+    }
+
+    &__timeline {
+        @extend %text-timeline;
+    }
+}
+
+.skills {
+    &__title {
+        @extend %title-small;
+        color: $color-golden;
+
+        @include respond-to('l') {
+            color: $color-dark;
+        }
+    }
+
+    &__items {
+        line-height: 1.6;
+    }
+
+    &__item {
+        color: $color-light;
+        font-size: 1.6rem;
+        font-weight: 400;
+
+        @include respond-to('l') {
+            color: $color-dark;
+        }
+    }
+}
+
+.contacts {
+    &__title {
+        @extend %title-medium;
+    }
+
+    &__subtitle {
+        @extend %title-small;
+    }
+
+    &__text {
+        @extend %text;
+        text-decoration: none;
+    }
+
+    &__item {
+        text-align: center;
+    }
+}
+
+.portfolio {
+    &__title {
+        @extend %title-medium;
+    }
+
+    &__text {
+        @extend %title-medium;
+        color: $color-golden;
+        margin: 0 auto;
+
+        @include respond-to('m') {
+            font-size: 2rem;
+        }
+
+        @include respond-to('s') {
+            font-size: 1.6rem;
+        }
+    }
+}
+
+.work {
+    &__title {
+        @extend %title-medium;
+    }
+
+    &__subtitle {
+        @extend %title-small;
+        text-decoration: none;
+    }
+
+    &__text {
+        @extend %text;
+    }
+
+    &__timeline {
+        @extend %text-timeline;
+    }
+
+    &__item {
+        text-align: center;
+    }
+}
+
+.code {
+    &__title {
+        @extend %title-medium;
+    }
+
+    &__text {
+        @extend %text;
+        line-height: 1.8;
+
+        @include respond-to('s') {
+            font-size: 1.2rem;
+        }
+    }
+}
+
+.footer {
+    &__text {
+        @extend %text;
+        color: $color-light;
+        text-align: center;
+    }
+}

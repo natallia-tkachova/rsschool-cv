@@ -1,0 +1,124 @@
+.body {
+    display: grid;
+}
+
+.profile {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+
+    &__image {
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+}
+
+.section-summary__container {
+    display: grid;
+    grid-template-columns: auto 18rem;
+    column-gap: 2rem;
+
+    @include respond-to('l') {
+        grid-template-columns: 1fr;
+    }
+}
+
+.contacts {
+    &__items {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 2rem;
+
+        @include respond-to('l') {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @include respond-to('m') {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    &__item {
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+        align-items: center;
+    }
+}
+
+.portfolio {
+    &__items {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 3rem;
+        row-gap: 3rem;
+
+        @include respond-to('m') {
+            column-gap: 2rem;
+            row-gap: 2rem;
+        }
+    }
+}
+
+.work {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+
+    @include respond-to('l') {
+        grid-template-columns: 1fr;
+    }
+
+    &__items {
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+        row-gap: 2rem;
+    }
+
+    &__item {
+        align-items: center;
+    }
+
+    &__item {
+        display: grid;
+    }
+}
+
+.code {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+
+    @include respond-to('l') {
+        grid-template-columns: 1fr;
+    }
+
+    &__title {
+        grid-column-start: 1;
+        grid-column-end: 3;
+
+        @include respond-to('l') {
+            grid-column-start: 1;
+            grid-column-end: 2;
+        }
+
+    }
+
+    &__image-wrapper {
+        @include respond-to('m') {
+            grid-row-start: 5;
+            grid-row-end: 6;
+        }
+    }
+}
+
+.footer {
+    &__container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+
+        @include respond-to('m') {
+            grid-template-columns: 1fr;
+        }
+    }
+}

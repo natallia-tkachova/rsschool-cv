@@ -1,0 +1,14 @@
+.container {
+    max-width: $content-width;
+    margin: auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+
+    @include respond-to('l') {
+        max-width: 100%;
+    }
+
+    @include respond-to('s') {
+        padding: 0 1rem;
+    }
+}
