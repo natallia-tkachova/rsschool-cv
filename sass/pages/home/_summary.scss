@@ -1,0 +1,70 @@
+.section-summary {
+    padding: 4rem 0;
+    background-color: $color-gray;
+
+    &__container {
+        padding: 1.5rem;
+        background-color: $color-light;
+        border-radius: 1rem;
+        box-shadow: $shadow;
+    }
+}
+
+.summary {
+    &__items {
+        padding-left: 0;
+        list-style-type: none;
+    }
+}
+
+.skills {
+    padding: 0 2rem;
+    background-color: $color-blue;
+    border-radius: .5rem;
+
+    @include respond-to('l') {
+        padding: 0;
+        background-color: $color-light;
+    }
+
+    &__items {
+        padding-left: 1.7rem;
+        list-style-type: none;
+
+        @include respond-to('l') {
+            padding-left: 0.5rem;
+        }
+
+    }
+
+    &__item {
+        position: relative;
+        padding-left: 0.5rem;
+        line-height: 1.8;
+
+        @include respond-to('l') {
+            display: inline-block;
+            padding-left: 1.1rem;
+            padding-right: 1.1rem;
+        }
+
+        &:before {
+            position: absolute;
+            top: 0.5rem;
+            left: -1.5rem;
+            content: "\f00c";
+            color: $color-golden;
+            font-family: "FontAwesome";
+            font-size: 1rem;
+
+            @include respond-to('l') {
+                left: -0.3rem;
+                color: $color-brown;
+            }
+        }
+    }
+
+    &__title {
+        margin-bottom: 1rem;
+    }
+}

@@ -1,23 +1,231 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/fonts/awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/x-icon" href="cv.png">
+  <title>Natallia Tkachova</title>
 </head>
-<body>
-    <header>
-        <nav class="nav">
-          <ul class="nav-list container">
-            <li class="nav-item"><a class="nav-link" href="#profile">profile</a></li>
-            <li class="nav-item"><a class="nav-link" href="#summary">summary</a></li>
-            <li class="nav-item"><a class="nav-link" href="#contacts">contacts</a></li>
-            <li class="nav-item"><a class="nav-link" href="#work">work</a></li>
-            <li class="nav-item"><a class="nav-link" href="#portfolio">portfolio</a></li>
-            <li class="nav-item"><a class="nav-link" href="#code">code</a></li>
-          </ul>
-        </nav>
-      </header>
+<body class="body">
+  <header class="header">
+    <nav class="navigation">
+      <ul class="navigation__items container">
+        <li class="navigation__item">
+          <a class="navigation__link" href="#profile">profile</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="#summary">summary</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="#contacts">contacts</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="#work">work</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="#portfolio">portfolio</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="#code">code</a>
+        </li>
+      </ul>
+      <div class="hamburger">
+        <span class="hamburger__line"></span>
+        <span class="hamburger__line"></span>
+        <span class="hamburger__line"></span>
+      </div>
+    </nav>
+    <section class="profile container" id="profile">
+      <div class="profile__content">
+        <h1 class="profile__title">Natallia Tkachova</h1>
+        <p class="profile__text">front-end developer</p>
+      </div>
+      <img class="profile__image" src="assets/img/tkachova.png" alt="foto">
+    </section>
+  </header>
+  <main class="main">
+    <section class="section-summary" id="summary">
+      <div class="container">
+        <div class="section-summary__container">
+          <div class="summary">
+            <h2 class="summary__title">Summary</h2>
+            <p class="summary__text">My goal is to become a top-notch full stack developer, and I’m going through it
+              with
+              perseverance and
+              consistency. I have experience developing websites on WordPress in web agencies and working as a
+              freelancer.
+              It was a very
+              useful experience, but I don’t stop there, so I continue to study and improve my knowledge in both
+              JavaScript
+              and English</p>
+            <h3 class="summary__subtitle">Education</h3>
+            <ul class="summary__items">
+              <li class="summary__item">
+                <p class="summary__text"><span class="summary__timeline">2012 - 2014</span> - correspondence learning in
+                  Vitebsk State University of Technology on
+                  Faculty
+                  of Advanced Training and Retaining. My specialization is Information Systems Software</p>
+              </li>
+              <li class="summary__item">
+                <p class="summary__text"><span class="summary__timeline">since 2015</span> - online courses on Udemy and
+                  Teamtreehouse</p>
+              </li>
+              <li class="summary__item">
+                <p class="summary__text"><span class="summary__timeline">since 2021</span> - rs school</p>
+              </li>
+            </ul>
+            <h3 class="summary__subtitle">Language</h3>
+            <p class="summary__text"><span class="summary__timeline">2000 - 2005</span> - full-time education at
+              Non-state Institute of Modern Knowledge. My
+              specialization
+              is Modern Foreign Languages. My estimated English level is B1 and now I am working hard to improve it.
+            </p>
+          </div>
+          <div class="skills">
+            <h3 class="skills__title">Skills</h3>
+            <ul class="skills__items">
+              <li class="skills__item">HTML</li>
+              <li class="skills__item">CSS</li>
+              <li class="skills__item">JavaScript</li>
+              <li class="skills__item">Sass</li>
+              <li class="skills__item">BEM</li>
+              <li class="skills__item">TypeScript</li>
+              <li class="skills__item">Git</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-contacts" id="contacts">
+      <div class="contacts container">
+        <h2 class="contacts__title">Contacts</h2>
+        <ul class="contacts__items">
+          <li class="contacts__item">
+            <i class="contacts__icon fa fa-phone" aria-hidden="true"></i>
+            <span class="contacts__subtitle">phone number</span>
+            <a class="contacts__text" href="tel:+375298182553">+375298182553</a>
+          </li>
+          <li class="contacts__item">
+            <i class="contacts__icon fa fa-envelope-o" aria-hidden="true"></i>
+            <span class="contacts__subtitle">email</span>
+            <a class="contacts__text" href="mailto:work.tkachova@gmail.com">work.tkachova@gmail.com</a>
+          </li>
+          <li class="contacts__item">
+            <i class="contacts__icon fa fa-map-marker" aria-hidden="true"></i>
+            <span class="contacts__subtitle">location</span>
+            <span class="contacts__text">Belarus, Vitebsk</span>
+          </li>
+          <li class="contacts__item">
+            <img class="contacts__icon" src="assets/svg/discord.svg" alt="discord">
+            <span class="contacts__subtitle">discord</span>
+            <span class="contacts__text">natallia-tkachova</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="section-work" id="work">
+      <div class="container">
+        <h2 class="work__title">Work Experience</h2>
+        <div class="work">
+          <div class="work__items">
+            <div class="work__item work__item">
+              <span class="work__timeline">2017 - 2018</span>
+              <a class="work__subtitle" href="https://redline.by/">web agency Redline</a>
+              <span class="work__text">front end developer</span>
+            </div>
+            <div class="work__item work__item_left">
+              <span class="work__timeline">2018 - 2019</span>
+              <a class="work__subtitle" href="https://st-lt.ru/">web agency Site Elite</a>
+              <span class="work__text">modx full stack developer</span>
+            </div>
+            <div class="work__item work__item_right">
+              <span class="work__timeline">2020 - 2021</span>
+              <span class="work__subtitle">freelancer</span>
+              <span class="work__text">wordpress full stack</span>
+            </div>
+          </div>
+          <div class="work__image-wrapper">
+            <img class="work__image" src="assets/img/work.jpg" alt="work">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-portfolio" id="portfolio">
+      <div class="container">
+        <h2 class="portfolio__title">Portfolio</h2>
+        <div class="portfolio__items">
+          <a class="portfolio__item" href="https://vitebsk.pizzasmile.by/">
+            <img class="portfolio__image" src="assets/img/pizzasmile.jpg" alt="pizzasmile">
+            <div class="portfolio__overlay"></div>
+            <p class="portfolio__text">front-end development</p>
+          </a>
+          <a class="portfolio__item" href="https://blgroup.by/">
+            <img class="portfolio__image" src="assets/img/blgroup.jpg" alt="blgroup">
+            <div class="portfolio__overlay"></div>
+            <p class="portfolio__text">front-end development</p>
+          </a>
+          <a class="portfolio__item" href="https://hudeembelarus.rlmaster.ru/">
+            <img class="portfolio__image" src="assets/img/hudeem.jpg" alt="hudeem">
+            <div class="portfolio__overlay"></div>
+            <p class="portfolio__text">front-end development</p>
+          </a>
+          <a class="portfolio__item" href="http://dev17.bmamonts.ru/">
+            <img class="portfolio__image" src="assets/img/ingrad.jpg" alt="ingrad">
+            <div class="portfolio__overlay"></div>
+            <p class="portfolio__text">modx, full stack</p>
+          </a>
+          <a class="portfolio__item" href="https://bestfish.by">
+            <img class="portfolio__image" src="assets/img/bestfish.jpg" alt="bestfish">
+            <div class="portfolio__overlay"></div>
+            <p class="portfolio__text">wordpress, full stack</p>
+          </a>
+          <a class="portfolio__item" href="https://robovita.by">
+            <img class="portfolio__image" src="assets/img/robovita.jpg" alt="robovita">
+            <div class="portfolio__overlay"></div>
+            <p class="portfolio__text">wordpress, full stack</p>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="section-code" id="code">
+      <div class="code container">
+        <h2 class="code__title">Code Example</h2>
+        <div class="code__image-wrapper">
+          <img class="code__image" src="assets/img/code.jpg" alt="code">
+        </div>
+        <div class="code__wrapper">
+          <pre class="code__pre">
+            <code class="code__text">
+function getCount(str) {
+  let vowelsCount = 0;
+  const vowels = ['a', 'e', 'i', 'o', 'u'];
+
+  for (let i = 0; i &lt; str.length; i++) {
+    if (vowels.includes(str[i])) {
+      vowelsCount++;
+    }
+  }
+
+  return vowelsCount;
+}
+              </code>  
+            </pre>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container footer__container">
+      <a class="footer__logo" href="https://rs.school/js/"></a>
+      <p class="footer__text">&copy; 2022, Natallia Tkachova</p>
+      <a class="footer__icon" href="https://github.com/natallia-tkachova">
+        <i class="fa fa-github" aria-hidden="true"></i>
+      </a>
+    </div>
+  </footer>
+  <script src="script.js"></script>
 </body>
 </html>
