@@ -1,9 +1,20 @@
 @import 'abstracts/variables';
+@import 'abstracts/mixins';
+@import 'abstracts/placeholders';
 
-@import 'base/reset';
+@import 'base/fonts';
+@import 'base/normalize';
 @import 'base/typography';
+@import 'base/helpers';
 
-@import 'layout/navigation';
 @import 'layout/grid';
 @import 'layout/header';
+@import 'layout/navigation';
 @import 'layout/footer';
+
+
+@import 'pages/home/summary';
+@import 'pages/home/contacts';
+@import 'pages/home/portfolio';
+@import 'pages/home/work';
+@import 'pages/home/code';

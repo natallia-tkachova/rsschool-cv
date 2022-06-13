@@ -1,0 +1,29 @@
+.header {
+    background-color: $color-light;
+}
+
+.profile {
+    padding-top: 6rem;
+
+    &__image {
+        width: 100%;
+        max-width: 58rem;
+    }
+
+    &__content {
+        margin: auto;
+        padding-top: 10rem;
+
+        @include respond-to('l') {
+            padding-top: 4rem;
+        }
+    }
+
+    &__title {
+        margin: 1rem 0;
+    }
+
+    &__text {
+        margin: 1rem 0;
+    }
+}
