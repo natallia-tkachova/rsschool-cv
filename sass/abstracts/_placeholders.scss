@@ -1,0 +1,39 @@
+%transition {
+    transition: all 0.4s linear;
+}
+
+%title-medium {
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    color: $color-blue;
+    font-size: 3rem;
+    font-weight: 600;
+    text-align: center;
+
+    @include respond-to('s') {
+        font-size: 2.2rem;
+    }
+}
+
+%title-small {
+    color: $color-blue;
+    font-size: 2.2rem;
+    font-weight: 600;
+
+    @include respond-to('s') {
+        font-size: 2rem;
+    }
+}
+
+%text {
+    color: $color-dark;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+%text-timeline {
+    color: $color-brown;
+    font-size: 1.6rem;
+    font-weight: 600;
+}

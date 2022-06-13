@@ -1,15 +1,20 @@
 @import 'abstracts/variables';
+@import 'abstracts/mixins';
+@import 'abstracts/placeholders';
 
+@import 'base/fonts';
 @import 'base/normalize';
 @import 'base/typography';
+@import 'base/helpers';
 
 @import 'layout/grid';
-@import 'layout/container';
 @import 'layout/header';
 @import 'layout/navigation';
-@import 'layout/summary';
-@import 'layout/contacts';
-@import 'layout/portfolio';
-@import 'layout/work';
-@import 'layout/code';
 @import 'layout/footer';
+
+
+@import 'pages/home/summary';
+@import 'pages/home/contacts';
+@import 'pages/home/portfolio';
+@import 'pages/home/work';
+@import 'pages/home/code';

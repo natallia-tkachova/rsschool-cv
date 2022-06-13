@@ -1,27 +1,14 @@
-@font-face {
-    font-family: 'Nunito';
-    src: url("assets/fonts/nunito/Nunito-Regular.ttf");
-    font-weight: 400;
-}
-
-@font-face {
-    font-family: 'Nunito';
-    src: url("assets/fonts/nunito/Nunito-SemiBold.ttf");
-    font-weight: 600;
-}
-
 html {
     font-size: 10px;
     font-family: 'Nunito', sans-serif;
 }
 
 .navigation {
-
     &__link {
         color: $color-light;
         font-size: 1.6rem;
         font-weight: 600;
-        letter-spacing: .1rem;
+        letter-spacing: 0.1rem;
         text-decoration: none;
         text-transform: uppercase;
 
@@ -36,53 +23,83 @@ html {
 }
 
 .profile {
-
     &__title {
-        color: $color-dark;
+        color: $color-blue;
         font-size: 5.7rem;
         font-weight: 600;
+
+        @include respond-to('l') {
+            font-size: 4rem;
+        }
+
+        @include respond-to('m') {
+            font-size: 3rem;
+        }
+
+        @include respond-to('s') {
+            font-size: 2.4rem;
+        }
+
+        @include respond-to('xs') {
+            font-size: 1.8rem;
+        }
     }
 
     &__text {
         color: $color-brown;
         font-size: 3rem;
-        font-weight: 400;
+        font-weight: 600;
+
+        @include respond-to('l') {
+            font-size: 2.8rem;
+        }
+
+        @include respond-to('m') {
+            font-size: 2rem;
+        }
+
+        @include respond-to('s') {
+            font-size: 1.8rem;
+            margin-left: -20px;
+        }
+
+        @include respond-to('xs') {
+            font-size: 1.6rem;
+        }
     }
 }
 
 .summary {
-
     &__title {
-        color: $color-dark;
-        font-size: 3rem;
-        font-weight: 600;
+        @extend %title-medium;
+        text-align: left;
+        margin-bottom: 1rem;
     }
 
     &__subtitle {
-        font-size: 2.2rem;
-        font-weight: 600;
+        @extend %title-small;
+        margin-bottom: 1rem;
     }
 
     &__text {
-        color: $color-dark;
-        font-size: 1.6rem;
-        font-weight: 400;
-        line-height: 1.5;
+        @extend %text;
         text-align: justify;
+        margin: 0;
     }
 
     &__timeline {
-        color: $color-brown;
-        font-weight: 600;
-        font-size: 1.6rem;
+        @extend %text-timeline;
     }
 }
 
 .skills {
     &__title {
+        @extend %title-small;
         color: $color-golden;
-        font-size: 2.2rem;
-        font-weight: 600;
+
+        @include respond-to('l') {
+            color: $color-dark;
+        }
     }
 
     &__items {
@@ -93,26 +110,24 @@ html {
         color: $color-light;
         font-size: 1.6rem;
         font-weight: 400;
+
+        @include respond-to('l') {
+            color: $color-dark;
+        }
     }
 }
 
 .contacts {
-
     &__title {
-        font-size: 3rem;
-        font-weight: 600;
-        text-align: center;
+        @extend %title-medium;
     }
 
     &__subtitle {
-        font-size: 2.2rem;
-        font-weight: 600;
+        @extend %title-small;
     }
 
     &__text {
-        color: $color-dark;
-        font-size: 1.6rem;
-        font-weight: 400;
+        @extend %text;
         text-decoration: none;
     }
 
@@ -122,46 +137,41 @@ html {
 }
 
 .portfolio {
-
     &__title {
-        font-size: 3rem;
-        font-weight: 600;
-        text-align: center;
+        @extend %title-medium;
     }
 
     &__text {
+        @extend %title-medium;
         color: $color-golden;
-        font-size: 2.2rem;
-        font-weight: 600;
-        text-align: center;
+        margin: 0 auto;
+
+        @include respond-to('m') {
+            font-size: 2rem;
+        }
+
+        @include respond-to('s') {
+            font-size: 1.6rem;
+        }
     }
 }
 
 .work {
-
     &__title {
-        font-size: 3rem;
-        font-weight: 600;
-        text-align: center;
+        @extend %title-medium;
     }
 
     &__subtitle {
-        color: $color-blue;
-        font-size: 2.2rem;
-        font-weight: 600;
+        @extend %title-small;
         text-decoration: none;
     }
 
     &__text {
-        color: $color-blue;
-        font-size: 1.6rem;
-        font-weight: 400;
+        @extend %text;
     }
 
     &__timeline {
-        color: $color-brown;
-        font-size: 1.6rem;
-        font-weight: 600;
+        @extend %text-timeline;
     }
 
     &__item {
@@ -171,23 +181,23 @@ html {
 
 .code {
     &__title {
-        font-size: 3rem;
-        font-weight: 600;
-        text-align: center;
+        @extend %title-medium;
     }
 
     &__text {
-        font-weight: 400;
-        font-size: 1.6rem;
+        @extend %text;
         line-height: 1.8;
+
+        @include respond-to('s') {
+            font-size: 1.2rem;
+        }
     }
 }
 
 .footer {
     &__text {
+        @extend %text;
         color: $color-light;
-        font-size: 1.8rem;
-        font-weight: 400;
         text-align: center;
     }
 }

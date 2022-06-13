@@ -2,22 +2,30 @@
     padding: 2rem 0 1.5rem;
     background-color: $color-dark;
 
-    &__container {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-
     &__logo {
-        width: 18rem;
+        width: 16rem;
         height: 6rem;
         background-image: url("assets/svg/rs_school_js.svg");
         background-repeat: no-repeat;
         background-size: contain;
-        transition: all 0.4s linear;
+        @extend %transition;
 
         &:hover {
             background-image: url("assets/svg/rs_school_js_hover.svg");
+        }
+
+        @include respond-to('m') {
+            margin: auto;
+            width: 11rem;
+            height: 5rem;
+        }
+    }
+
+    &__icon {
+        margin-left: auto;
+
+        @include respond-to('m') {
+            margin: auto;
         }
     }
 }
@@ -25,7 +33,7 @@
 .fa-github {
     color: $color-golden;
     font-size: 7rem;
-    transition: all 0.5s linear;
+    @extend %transition;
 
     &:hover {
         color: $color-light;

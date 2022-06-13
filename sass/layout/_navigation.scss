@@ -7,25 +7,85 @@ html {
     z-index: 100;
     display: flex;
     align-items: center;
-    height: 6rem;
     width: 100%;
+    min-height: 6rem;
     background-color: $color-blue;
-    transition: all 0.3s ease-in-out;
+    @extend %transition;
+
+    @include respond-to('m') {
+        padding: 0;
+        min-height: 4rem;
+    }
+
+    &__size_tiny {
+        padding: 0;
+        min-height: 4rem;
+    }
 
     &__items {
         display: flex;
         justify-content: space-between;
-        padding: 0;
+        width: 100%;
         list-style-type: none;
+        @extend %transition;
+
+        @include respond-to('m') {
+            display: grid;
+            height: 0;
+            overflow: hidden;
+        }
+
+        &_opened {
+            display: grid;
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+            height: 17.3rem;
+            background-color: $color-blue;
+            @extend %transition;
+        }
+
     }
 
     &__link {
+        line-height: 1.8;
         cursor: pointer;
-        transition: all 0.5s linear;
+        @extend %transition;
     }
 
-    &_tiny {
-        padding: 0;
-        height: 30px;
+}
+
+.hamburger {
+    display: none;
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    &__state_active &__line:nth-child(2) {
+        opacity: 0;
+    }
+
+    &__state_active &__line:nth-child(1) {
+        transform: translateY(0.8rem) rotate(45deg);
+    }
+
+    &__state_active &__line:nth-child(3) {
+        transform: translateY(-0.8rem) rotate(-45deg);
+    }
+
+    @include respond-to('m') {
+        position: absolute;
+        display: block;
+        top: 0.5rem;
+        right: 2rem;
+    }
+
+    &__line {
+        display: block;
+        margin: 0.6rem auto;
+        width: 2rem;
+        height: 0.2rem;
+        background-color: $color-light;
+        @extend %transition;
     }
 }
